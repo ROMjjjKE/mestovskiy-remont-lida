@@ -48,7 +48,7 @@ nav.main a:hover{background:var(--tint)}
 .burger{display:none;background:none;border:1.5px solid var(--line);border-radius:8px;padding:9px 10px;cursor:pointer}
 .burger span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0}
 /* hero */
-.hero{padding:54px 0 34px}
+.hero{padding:38px 0 28px}
 .hgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
 h1{font-size:clamp(27px,3.6vw,44px);line-height:1.12;margin-bottom:16px}
 h1 em{font-style:normal;color:var(--acc)}
@@ -60,7 +60,7 @@ h1 em{font-style:normal;color:var(--acc)}
 .hbtns{display:flex;gap:12px;flex-wrap:wrap}
 .hnote{margin-top:14px;font-size:13px;color:var(--mut)}
 .hphoto{position:relative}
-.hphoto img{border-radius:14px;border:1px solid var(--line);box-shadow:0 18px 40px rgba(16,24,40,.12)}
+.hphoto img{border-radius:14px;border:1px solid var(--line);box-shadow:0 18px 40px rgba(16,24,40,.12);width:100%;height:min(50vh,470px);object-fit:cover;object-position:50% 40%}
 .hphoto .badge{position:absolute;top:14px;left:14px;background:var(--dark);color:#fff;font-size:11px;letter-spacing:.14em;padding:7px 11px;border-radius:6px;text-transform:uppercase}
 .hphoto figcaption{font-size:11.5px;color:var(--mut);margin-top:10px}
 /* секции */
@@ -150,6 +150,7 @@ nav.main.open{display:flex}
 nav.main a{padding:12px 14px;font-size:15.5px}
 .burger{display:block}
 .hgrid{grid-template-columns:1fr;gap:26px}
+.hphoto img{height:42vh}
 .dl-body{grid-template-columns:1fr}
 .dl-sym{border-right:none;border-bottom:1px solid var(--line);flex-direction:row;overflow-x:auto}
 .sym{flex:none;border-bottom:none;border-right:1px solid var(--line);padding:12px 16px}
